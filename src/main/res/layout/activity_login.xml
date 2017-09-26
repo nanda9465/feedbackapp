@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/bg_color"
+    tools:context="com.example.nandakishorereddy.feedback_app.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accenture Solutions Pvt.Itd."
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="56dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:weightSum="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:layout_width = "150dp"
+                android:layout_height = "wrap_content"
+                android:id = "@+id/input_server"
+                android:hint = " server IP"
+                android:focusable = "true"
+                android:textColorHighlight = "#ff7eff15"
+                android:textColorHint = "#ffff25e6"
+                android:layout_marginTop = "30dp"
+                android:background="#ffffff"
+                android:layout_weight="0.14" />
+            <EditText
+                android:layout_width = "150dp"
+                android:layout_height = "wrap_content"
+                android:id = "@+id/input_client"
+                android:hint = " Client "
+                android:focusable = "true"
+                android:textColorHighlight = "#ff7eff15"
+                android:textColorHint = "#ffff25e6"
+                android:layout_marginTop = "30dp"
+                android:background="#ffffff"
+                android:layout_weight="0.14" />
+
+            <EditText
+                android:layout_width = "290dp"
+                android:layout_height = "wrap_content"
+                android:id = "@+id/input_email"
+                android:hint = "  User Name"
+                android:focusable = "true"
+                android:textColorHighlight = "#ff7eff15"
+                android:textColorHint = "#ffff25e6"
+                android:layout_marginTop = "30dp"
+                android:background="#ffffff"
+                android:layout_weight="0.14" />
+
+            <EditText
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/input_password"
+                android:textColorHint="#ffff299f"
+                android:hint=" Password"
+                android:layout_marginTop="35dp"
+                android:background="#ffffff" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:text="Login"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
